@@ -1,31 +1,29 @@
 ---
 
-title: "About David Florian"
+title: "About Alexander Erwin"
 
 ---
 
 ## Education
 
-David prides himself on his diverse skill set. His most prominent fields of expertise are additive manufacturing (i.e., 3D printing) and biotechnology. 
+Alexander is a current senior at Vanderbilt University who will be graduating in May 2023. He believes that education should be interdisciplinary. 
 
-* University of Virginia
-  * BS Mathematics
-  * BS Biomedical Engineering
 * Vanderbilt University
-  * PhD Biomedical Engineering
+  * B.S. in Computer Science
+  * Minor in Mathematics
+  * Minor in English
+  * Minor in Digital Fabrication
 
 ## Technical Skills
 
-David can operate a number of different computer controlled (CNC) fabrication tools to turn 3D models into real-life parts. David has experience with the following additive manufacturing technologies:
+Alexander has experience and aptitude in the following technologies and languages:
 
+* Java
+* Javascript
+* C++
+* AWS
 * Fused Filament Fabrication (FFF)
-* Stereolithography (SLA)
-* Selective Laser Sintering (SLS)
-* 3D Inkjet Printing
-* Bioplotting
 
-## Press 
+## Dust Cover Photo
 
-The new Digital Fabrication Minor was covered in the [Vanderbilt Hustler](https://vanderbilthustler.com/2022/11/09/digital-fabrication-minor-introduced-for-2022-23-academic-year/).
-
-<img src="/assets/img/David_Headshot_web2.jpg" alt="David Florian" style="width:200px;"/>
+<img src="/assets/img/erwin_dust_cover.jpg" alt="Alexander Erwin Dust Cover" style="width:200px;"/>
