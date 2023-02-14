@@ -1,10 +1,13 @@
 ---
 title: Portfolio
-layout: collection
+layout: collectionDouble
 permalink: /portfolio/
 collection: portfolio
+collection2: portfolio2
 entries_layout: grid
 classes: wide
 ---
 
 My digital fabrication projects:
+
+My CS projects:
