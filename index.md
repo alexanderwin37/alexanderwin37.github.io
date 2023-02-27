@@ -10,10 +10,10 @@ header:
       url: "/portfolio/"
 excerpt: "Alexander Erwin is a current senior at Vanderbilt University studying Computer Science. He also has interest in Mathematics, English, and Digital Fabrication."
 feature_row:
-  - image_path: assets/img/forest.jpg
-    alt: "placeholder image 1"
-    title: "Project Area 1"
-    excerpt: "Placeholder for first project"
+  - image_path: /assets/img/mmpliers.jpg
+    alt: "Multi-Material Print-in-Place Pliers"
+    title: "Multi-Material Print-in-Place Pliers"
+    excerpt: "Functional needle nose pliers, printed in place through PLA and TPU dual extrusion. No assembly required."
   - image_path: assets/img/forest.jpg
     alt: "placeholder image 2"
     title: "Project Area 2"
