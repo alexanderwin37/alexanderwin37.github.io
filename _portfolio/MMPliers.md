@@ -1,12 +1,10 @@
 ---
-layout: single
-title:  "Multi-Material FFF Pliers"
+title: "Multi-Material FFF Pliers"
+excerpt: "Functional needle nose pliers, printed in place through PLA and TPU dual extrusion. No assembly required."
 header:
-teaser: "unsplash-gallery-image-2-th.jpg"
-categories:
-- Jekyll
-  tags:
-- edge case
+  image: "/assets/img/mmpliers.jpg"
+  teaser: "/assets/img/mmpliers.jpg"
+
 ---
 
 These pliers were filament printed from a combination of PLA and 95A TPU. As seen below, the gray (including gray 
