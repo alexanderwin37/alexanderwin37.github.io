@@ -2,11 +2,7 @@
 layout: single
 title:  "Multi-Material FFF Pliers"
 header:
-teaser: "unsplash-gallery-image-2-th.jpg"
-categories:
-- Jekyll
-  tags:
-- edge case
+  teaser: "unsplash-gallery-image-2-th.jpg"
 ---
 
 These pliers were filament printed from a combination of PLA and 95A TPU. As seen below, the gray (including gray 
