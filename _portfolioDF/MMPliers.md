@@ -5,7 +5,6 @@ excerpt: "Functional needle nose pliers, printed in place through PLA and TPU du
 header:
   image: "/assets/img/mmpliers.jpg"
   teaser: "/assets/img/mmpliers.jpg"
-
 ---
 
 These pliers were filament printed from a combination of PLA and 95A TPU. As seen below, the gray (including gray 
@@ -41,14 +40,17 @@ could be tried.
 
 Unfortunately, more iterations of the design were not possible given the timeframe of the project. This is due to 
 the significant amount of time it takes to print this design. Indeed, because TPU is an elastic filament, it must be 
-printed more slowly than PLA. Moreover, its elasticity means both that it is prone to 
-leaking from the extruder while not being actively used and that it takes longer for the nozzle to extrude at a 
-constant speed after rest. Therefore, whenever the TPU extruder is activated, the ooze must be cleaned and the 
-nozzle must be primed. To ensure this happens properly, a wipe tower was utilized. This gives the nozzle plenty of 
-time to establish a smooth flow of molten plastic but also provides a surface which will "snag" filament that has 
-oozed onto the nozzle while it was inactive.
+printed more slowly than PLA. Moreover, its elasticity means both that it is prone to leaking from the extruder 
+while not being actively used and that it takes longer for the nozzle to extrude at a constant speed after rest. 
+Therefore, whenever the TPU extruder is activated, the ooze must be cleaned and the nozzle must be primed. To 
+ensure this happens properly, a wipe tower was utilized. This gives the nozzle plenty of time to establish a smooth 
+flow of molten plastic but also provides a surface which will "snag" filament that has oozed onto the nozzle while 
+it was inactive.
+
+On top of this, TPU requires different print settings from PLA to print smoothly. Specifically, the TPU in this 
+project was printed at 240°C, with a max print speed of 25 mm/s, and a 15mm/s retraction speed. The higher 
+temperature is required to melt the TPU, while the slower speeds are required to give the nozzle time to properly 
+force the elastic TPU through the nozzle.
 
 <iframe src="https://a360.co/3IThZDZ" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
 {% include gallery caption="CAD Design for Multi-Material Pliers" %}
-
-#
