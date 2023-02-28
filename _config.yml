@@ -177,7 +177,10 @@ kramdown:
 
 # Collections
 collections:
-  portfolio:
+  portfolioDF:
+    output: true
+    permalink: /:collection/:path/
+  portfolioCS:
     output: true
     permalink: /:collection/:path/
 
@@ -202,9 +205,17 @@ defaults:
     values:
       layout: single
       author_profile: true
-  # _portfolio
+  # _portfolioDF
   - scope:
-      path: "_portfolio"
+      path: "_portfolioDF"
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+  # _portfolioCS
+  - scope:
+      path: "_portfolioCS"
       type: portfolio
     values:
       layout: single

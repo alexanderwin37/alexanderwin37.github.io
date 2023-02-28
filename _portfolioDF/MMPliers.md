@@ -1,4 +1,5 @@
 ---
+layout: single
 title: "Multi-Material FFF Pliers"
 excerpt: "Functional needle nose pliers, printed in place through PLA and TPU dual extrusion. No assembly required."
 header:

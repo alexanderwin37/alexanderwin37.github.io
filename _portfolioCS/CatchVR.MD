@@ -1,13 +1,13 @@
 ---
+layout: single
 title: "CatchVR"
 excerpt: "A virtual reality based experience meant to capture the feeling of playing catch."
 header:
   image: /assets/img/CatchVRLogo.png
   teaser: /assets/img/CatchVRLogo.png
 gallery:
-  - image_path: assets/img/CatchVRLogo.png
-  - image_path: assets/img/CatchPoster.png
-   
+  - image_path: /assets/img/CatchVRLogo.png
+  - image_path: /assets/img/CatchPoster.png
 ---
 
 # Features

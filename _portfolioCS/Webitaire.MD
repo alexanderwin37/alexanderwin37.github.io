@@ -1,4 +1,5 @@
 ---
+layout: single
 title: "Webitaire"
 excerpt: "This online game is a lightweight, ad-free, web-based version of solitaire."
 header:
@@ -6,7 +7,7 @@ header:
   teaser: /assets/img/webitaire_logo.png
 gallery:
   - url: /assets/img/webitaire_logo.png
-    image_path: assets/img/webitaire_logo.jpg
+    image_path: /assets/img/webitaire_logo.png
     alt: "Webitaire Logo consisiting of four stacked playing cards"
 ---
 
