@@ -92,3 +92,6 @@ Stereolithography was the best candidate among 3D printing technologies with whi
 
 ## Citations
 
+Lee C-Y, Chang C-L, Wang Y-N, Fu L-M. Microfluidic Mixing: A Review. *International Journal of Molecular Sciences.*
+2011; 12(5):3263-3287. https://doi.org/10.3390/ijms12053263
+
