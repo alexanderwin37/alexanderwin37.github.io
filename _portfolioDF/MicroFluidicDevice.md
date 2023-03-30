@@ -20,7 +20,7 @@ Many of the most traditional applications exist within the domain of biology and
 
 ## What does this Microfluidic device do and why?
 
-__Mix__
+__Mix!__
 
 In this project, a microfluidic mixer was designed. While perhaps not immediately applicable to Computer Science, it 
 is easy to imagine such devices being used in the field in the future. As rare and precious earth metals grow more 
@@ -71,9 +71,9 @@ The FormLabs Form 3 SLA printer was used to 3D print the mold of the microfluidi
     various types of resins, which can offer different properties such as flexibility, toughness, or transparency. In this project, Black Resin was used based on availability and matte surface finish. 
   - __Speed__: SLA printing at a very high detail (.025 mm) can be faster than other 3D printing or additive 
     manufacturing technologies, especially for smaller parts. 
-  - __Watertight__: VPP parts are printed watertight create the actual device, the mold must be pralined and must be 
-    smooth an watertight so that the mold can hold. 
-  - __Minimal post-processing__: Due to the smooth finish, the only required post processing included removing supports,
+  - __Watertight__: VPP parts are printed watertight create the actual device, the mold must be Parylened and must be 
+    smooth and watertight so that the mold can hold. 
+  - __Minimal post-processing__: Due to the smooth finish, the only required post-processing included removing supports,
     washing the part, and minimal curing (material properties are not crucial in this case).
 
 Due to this project’s specific use case, the available technology at hand and all of the benefits mentioned above, 
