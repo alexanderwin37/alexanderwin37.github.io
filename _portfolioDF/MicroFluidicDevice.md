@@ -30,6 +30,8 @@ may provide a way to meet both challenges while leveraging a technology that is 
 
 ## The Design
 
+<img src="/assets/img/ufRender.PNG" alt="Parallelogram Microfluidic Mixer Design" style="width:800px;height:600px;">
+
 The device uses two different mixing patterns to efficiently mix the two fluids that enter. The design begins with 
 two inlets that converge into one channel. The fluid will encounter five parallelogram barriers within the channel at 
 the beginning and end of its duration with a zigzag pattern between. Due to the inherently laminar characteristics of the micro-scaled flows, mixing in passive micromixers relies predominantly on chaotic advection effects. Therefore, that was the thought process of the parallelogram barriers and the zigzag. Both techniques induce shear forces and inertial effects within the fluid as it interacts with another fluid.
@@ -51,7 +53,11 @@ That is, while the Form 3 does have micrometer scale resolution, a feature which
 but tall in the z dimension would be unlikely to demold well after being molded into PDMS. Therefore, many of the 
 designs with very small sub-channels were not the right choice for the project.
 
-Ultimately, a combination of the two designs below were chosen and unified into a single device.
+Ultimately, a combination of the two designs below were chosen and unified into a single device. (These images are 
+courtesy of "Microfluidic Mixing: A Review" which is cited below.)
+
+<img src="/assets/img/ufFigure14.PNG" alt="Zig Zag Microfluidic Mixer Design" style="width:800px;height:600px;">
+<img src="/assets/img/ufFigure8.PNG" alt="Parallelogram Microfluidic Mixer Design" style="width:800px;height:600px;">
 
 Initially, the small parallelogram insets within the channels were designed to be 0.5 mm thick and 2 mm deep. After 
 printing a prototype of the mold on the SLA printer, it seemed unlikely that these features would demold properly. 
