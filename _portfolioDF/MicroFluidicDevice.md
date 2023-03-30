@@ -3,11 +3,11 @@ layout: single
 title: "SLA Micro-Fluidic Device"
 excerpt: "Micro-Fluidic Mixer Mold. Printed with SLA."
 header:
-image: "/assets/img/mmpliers.jpg"
-teaser: "/assets/img/mmpliers.jpg"
+  image: "/assets/img/finalUFluidic.jpg"
+  teaser: "/assets/img/finalUFluidic.jpg"
 ---
 
-# Microfluidic Devices: An Introduction
+## Microfluidic Devices: An Introduction
 
 Microfluidic devices are designed to process fluids, likely containing small particles, cells, or other reagents, at 
 a micro scale. In form, these devices consist of small channels designed in such a way that a specific task is 
@@ -18,7 +18,7 @@ completed, like:
 
 Many of the most traditional applications exist within the domain of biology and medicine.
 
-# What does this Microfluidic device do and why?
+## What does this Microfluidic device do and why?
 
 __Mix__
 
@@ -28,7 +28,7 @@ expensive, it would be beneficial to create more efficient ways to form alloyed 
 necessary to consider than new semi-conductor materials may be needed in the not-so-distant future. Microfluidics 
 may provide a way to meet both challenges while leveraging a technology that is already established in other domains.
 
-# The Design
+## The Design
 
 The device uses two different mixing patterns to efficiently mix the two fluids that enter. The design begins with 
 two inlets that converge into one channel. The fluid will encounter five parallelogram barriers within the channel at 
@@ -39,7 +39,7 @@ different fluids in the channels by increasing the contact area and time of the 
 no external energy or force is applied to agitate the fluids in the channels. Thus, the project contains no moving 
 parts nor does it require any energy to be input apart from the flow pressure of the liquids.
 
-# Design Process
+## Design Process
 
 Without any prior experience designing microfluidics, the first step in creating this design was to review an 
 existing paper, which provided an overview of the current field of microfluidic mixers and was titled: "Microfluidic 
@@ -58,11 +58,11 @@ printing a prototype of the mold on the SLA printer, it seemed unlikely that the
 The width of the parallelograms was subsequently widened to 1 mm in order to increase the chance that the device 
 would be able to be manufactured.
 
-# The Manufacturing Process
+## The Manufacturing Process
 
 **Coming Soon**
 
-# Why was VPP chosen to print the negative mold?
+## Why was VPP chosen to print the negative mold?
 
 The FormLabs Form 3 SLA printer was used to 3D print the mold of the microfluidic device and there is a multitude of reasons why Stereolithography (SLA) or Vat photopolymerization (VPP) was selected to do so including:
   - __High Resolution/ Accuracy__: VPP printers are capable of producing high-resolution parts with intricate details 
@@ -79,10 +79,10 @@ The FormLabs Form 3 SLA printer was used to 3D print the mold of the microfluidi
 Due to this project’s specific use case, the available technology at hand and all of the benefits mentioned above, 
 Stereolithography was the best candidate among 3D printing technologies with which to create the negative mold for the microfluidic device.
 
-# CAD Model of Device
+## CAD Model of Device
 
 <iframe src="https://a360.co/3TCQDGO" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
 {% include gallery caption="CAD Design for Microfluidic Device" %}
 
-# Citations
+## Citations
 
