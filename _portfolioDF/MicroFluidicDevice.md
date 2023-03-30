@@ -30,7 +30,7 @@ may provide a way to meet both challenges while leveraging a technology that is 
 
 ## The Design
 
-<img src="/assets/img/ufRender.PNG" alt="Parallelogram Microfluidic Mixer Design" style="width:800px;height:600px;">
+<img src="/assets/img/ufRender.PNG" alt="Parallelogram Microfluidic Mixer Design" style="width:800px;">
 
 The device uses two different mixing patterns to efficiently mix the two fluids that enter. The design begins with 
 two inlets that converge into one channel. The fluid will encounter five parallelogram barriers within the channel at 
@@ -56,8 +56,8 @@ designs with very small sub-channels were not the right choice for the project.
 Ultimately, a combination of the two designs below were chosen and unified into a single device. (These images are 
 courtesy of "Microfluidic Mixing: A Review" which is cited below.)
 
-<img src="/assets/img/ufFigure14.PNG" alt="Zig Zag Microfluidic Mixer Design" style="width:800px;height:600px;">
-<img src="/assets/img/ufFigure8.PNG" alt="Parallelogram Microfluidic Mixer Design" style="width:800px;height:600px;">
+<img src="/assets/img/ufFigure14.PNG" alt="Zig Zag Microfluidic Mixer Design" style="width:800px;">
+<img src="/assets/img/ufFigure8.PNG" alt="Parallelogram Microfluidic Mixer Design" style="width:800px;">
 
 Initially, the small parallelogram insets within the channels were designed to be 0.5 mm thick and 2 mm deep. After 
 printing a prototype of the mold on the SLA printer, it seemed unlikely that these features would demold properly. 
