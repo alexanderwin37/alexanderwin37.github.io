@@ -36,5 +36,3 @@ Alexander has experience and aptitude in the following technologies and language
   * Lasercutting
 
 ## Dust Cover Photo
-
-<img src="/assets/img/erwin_dust_cover.jpg" alt="Alexander Erwin Dust Cover" style="width:200px;"/>
