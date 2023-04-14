@@ -34,5 +34,6 @@ Alexander has experience and aptitude in the following technologies and language
   * ...and more!
 * Digital Fabrication
   * Lasercutting
-
-## Dust Cover Photo
+  * Fused Filament Fabrication
+  * SLA (Resin Printing)
+  * SLS (Powder Printing)
