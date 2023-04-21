@@ -3,8 +3,8 @@ layout: single
 title: "Generative Design Podium"
 excerpt: "Lectern Designed with Generative Design and Printed on a Large Format 3D Printer"
 header:
-image: "/assets/img/PodiumRender.PNG"
-teaser: "/assets/img/PodiumRender.PNG"
+  image: "/assets/img/PodiumRender.PNG"
+  teaser: "/assets/img/PodiumRender.PNG"
 ---
 
 ## What is Large Format 3D Printing
