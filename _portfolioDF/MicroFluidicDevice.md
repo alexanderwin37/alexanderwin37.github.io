@@ -64,9 +64,10 @@ printing a prototype of the mold on the SLA printer, it seemed unlikely that the
 The width of the parallelograms was subsequently widened to 1 mm in order to increase the chance that the device 
 would be able to be manufactured.
 
-## The Manufacturing Process
+## Manufactured Device
 
-**Coming Soon**
+<img src="/assets/img/uFluidicFinal.JPG" alt="Manufactured MicroFluidic Device" style="width:800px;">
+<img src="/assets/img/uFluidicMix.JPG" alt="Microfluidic Device in Action" style="width:800px;">
 
 ## Why was VPP chosen to print the negative mold?
 
