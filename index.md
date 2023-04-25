@@ -14,14 +14,14 @@ feature_row:
     alt: "Multi-Material Print-in-Place Pliers"
     title: "Multi-Material Print-in-Place Pliers"
     excerpt: "Functional needle nose pliers, printed in place through PLA and TPU dual extrusion. No assembly required."
-  - image_path: assets/img/forest.jpg
+  - image_path: assets/img/PrintedPodium.jpg
     alt: "placeholder image 2"
-    title: "Project Area 2"
-    excerpt: "Placeholder for second project"
-  - image_path: assets/img/forest.jpg
+    title: "Generative Design Podium"
+    excerpt: "Podium creating with generative design and printed on a large format 3D printer"
+  - image_path: assets/img/CatchVRLogo.png
     alt: "placeholder image 3"
-    title: "Project Area 3"
-    excerpt: "Placeholder for third project"
+    title: "CatchVR"
+    excerpt: "A virtual reality game connecting people through a classic activity: catch"
 ---
 
 {% include feature_row %}
