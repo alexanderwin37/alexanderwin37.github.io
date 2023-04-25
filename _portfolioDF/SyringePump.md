@@ -40,14 +40,16 @@ minimal budget.
 | RGB Common Cathode                                                   | 1        | [Amazon](https://www.amazon.com/dp/B0194Y6MW2/ref=cm_sw_em_r_mt_dp_FW3CFQT7ZGFQ2R04N6G3?_encoding=UTF8&psc=1) |       | <img src="/assets/img/SyringePumpBOM/rgbLed.png" alt="RGB Common Cathode LED">
 
 #### Custom 3D Printed
-| Component | Quantity | Link | Image |
-|-----------|----------|------|-------|
-|           |          |      |       |
-|           |          |      |       |
-|           |          |      |       |
-|           |          |      |       |
-|           |          |      |       |
-|           |          |      |       |
+| Component            | Quantity | Model Link | Image |
+|----------------------|----------|------------|-------|
+| Motor Mounting Plate | 1        |            |       |
+| Carriage             | 1        |            |       |
+| Front End Support    | 1        |            |       |
+| Back End Support     | 1        |            |       |
+| Case                 | 1        |            |       |
+| Case Lid             | 1        |            |       |
+| Syringe Offset Inset | 1        |            |       |
+| Branding Flag        | 1        |            |       |
 
 ## Arduino Control Code
 
