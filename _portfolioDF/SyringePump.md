@@ -25,7 +25,7 @@ minimal budget.
 
 | Component                                                            | Quantity | Link (may be outdated)                                                                                        | Image |
 |----------------------------------------------------------------------|----------|---------------------------------------------------------------------------------------------------------------|-------|
-| 250 mm lead screw; 2mm pitch; 2mm lead                               | 1        | [Amazon](https://www.amazon.com/dp/B07R1H5ZMV/ref=cm_sw_em_r_mt_dp_0YZ13D4HQBGW2Z86PBV1?_encoding=UTF8&psc=1) |       | <img src="/assets/img/leadScrew.png" alt="Podium Generative Design Result" style="width:800px;">
+| 250 mm lead screw; 2mm pitch; 2mm lead                               | 1        | [Amazon](https://www.amazon.com/dp/B07R1H5ZMV/ref=cm_sw_em_r_mt_dp_0YZ13D4HQBGW2Z86PBV1?_encoding=UTF8&psc=1) |       | <img src="/assets/img/SyringePumpBOM/leadScrew.png" alt="Podium Generative Design Result" style="width:800px;">
 | 1/4" x 8mm Flexible Coupling                                         | 1        | [OpenBuilds Part Store](https://openbuildspartstore.com/1-4-x-8mm-flexible-coupling/)                         |       |
 | 200 mm linear rod; 8mm diameter                                      | 1        | [Amazon](https://www.amazon.com/dp/B07MPGWJMS/ref=cm_sw_em_r_mt_dp_X5AQS0ES7JH8JG83AAZ3)                      |       |
 | LM8UU Linear Bearing for 8 mm diameter rod                           | 2        | [Amazon](https://www.amazon.com/gp/product/B087WPGQ8T/ref=ppx_yo_dt_b_asin_image_o00_s00?ie=UTF8&psc=1)       |       |
