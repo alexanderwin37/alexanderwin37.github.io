@@ -33,6 +33,14 @@ minimal budget.
 * **Fully DIY** | This project has been specifically designed to be fully DIY. It utilizes only off the shelf 
   components available cheaply from online retailers and 3D printed parts which can be printed on nearly any 
   filament 3D printer. Thus, this projects acts as a proof of concept for a cheaper, more accessible syringe pump.
+* **Unique Design and Branding** | While aesthetic sensibility does not have an impact on the functionality of the 
+  device, it is easy to imagine that a patient would want an unobtrusive and understated design. Thus, the pump 
+  bears a classic black and white design scheme with a small branding "flag".
+
+Below you can see the limit switch which has been heat set into the right support, the interchangeable spacer atop 
+the carriage, and the branding flag bearing the RR mark.
+
+<img src="/assets/img/syringe/closeupRR.jpg" alt="Parallelogram Microfluidic Mixer Design" style="width:800px;">
 
 ## Bill Of Materials
 
@@ -72,6 +80,11 @@ minimal budget.
 <script src="https://gist.github.com/alexanderwin37/3bb129f6786a10142793fe48e84a1a1d.js"></script>
 
 ## Syringe Pump Assembly
+
+## Wiring
+
+<img src="/assets/img/syringe/wiringDiagram.png" alt="Fritzing Diagram of Syringe Pump Wiring" style="width:800px;">
+<img src="/assets/img/syringe/wiring.JPG" alt="Syringe Pump Wiring as Produced" style="width:800px;">
 
 ## Operating Instructions
 
