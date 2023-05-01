@@ -10,14 +10,29 @@ header:
 ## Project Motivation
 
 Syringe Pumps are commonly used in a plethora of medical scenarios to dispense precise quantities of medicine over 
-an extended duration and in a fully automated way. However, these devices cost thousands of dollars despite not 
-being extraordinarily complicated.
+an extended duration and in a fully automated way. However, these devices are very expensive, each costing thousands 
+of dollars despite being fairly simply.
 
 This project aims to use basic CAD, programming, and electronics principles to create a functional syringe pump on a 
 minimal budget.
 
 ## Design Features
 
+* **Status LED** | RGB LED acts as a status indicator for the pump. Green indicates running; yellow indicates paused;
+  red indicates attention is needed either because the pump has finished or because there has been an error.
+* **Limit Switch** | To ensure the syringe pump ceases execution when the carriage cannot travel any further, a 
+  limit switch was installed on one of the end supports. When triggered, the motor is killed.
+* **Interchangeable Spacer** | This insert allows the carriage to properly pump all sizes of syringe. Specifically, 
+  the insert can be chosen so that the carriage triggers the limit switch exactly when the syringe is fully empty.
+* **LCD Readout** | This readout lists the chosen flow rate of the syringe pump as well as the time remaining on its 
+  current job. The time remaining dynamically updates as the pump operates. The readout will also alert the user if 
+  the chosen flow rate is too high.
+* **Motor Micro-stepping** | The NEMA 17 stepper motor has been configured to utilize micro-stepping. This is a 
+  technique used to obtain greater precision from the motor while also making its actuation both smoother and more 
+  quiet. The downside is that the maximum reliable flow rate is reduced.
+* **Fully DIY** | This project has been specifically designed to be fully DIY. It utilizes only off the shelf 
+  components available cheaply from online retailers and 3D printed parts which can be printed on nearly any 
+  filament 3D printer. Thus, this projects acts as a proof of concept for a cheaper, more accessible syringe pump.
 
 ## Bill Of Materials
 
