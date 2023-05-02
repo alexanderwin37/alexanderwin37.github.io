@@ -64,22 +64,26 @@ the carriage, and the branding flag bearing the RR mark.
 
 #### Custom 3D Printed
 
-| Component            | Quantity | Model Link | Image |
-|----------------------|----------|------------|-------|
-| Motor Mounting Plate | 1        |            |       |
-| Carriage             | 1        |            |       |
-| Front End Support    | 1        |            |       |
-| Back End Support     | 1        |            |       |
-| Case                 | 1        |            |       |
-| Case Lid             | 1        |            |       |
-| Syringe Offset Inset | 1        |            |       |
-| Branding Flag        | 1        |            |       |
+| Component            | Quantity | Image                                                                                                                                        |
+|----------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| Motor Mounting Plate | 1        | <img src="/assets/img/syringe/bom/mmPlate.PNG" alt="Motor Mounting Plate">                                                                   |
+| Carriage             | 1        | <img src="/assets/img/syringe/bom/carriage.PNG" alt="Carriage">                                                                              |
+| Front End Support    | 1        | <img src="/assets/img/syringe/bom/frontEndSupport.PNG" alt="Front End Support">                                                              |
+| Back End Support     | 1        | <img src="/assets/img/syringe/bom/backEndSupport.PNG" alt="Back End Support">                                                                |
+| Case                 | 1        | <img src="/assets/img/syringe/bom/housing.PNG" alt="Housing for All Electrical Components">                                                  |
+| Case Lid             | 1        | <img src="/assets/img/syringe/bom/boxLid.PNG" alt="Lid for Housing on which Pump is Mounted">                                                |
+| Syringe Offset Inset | 1        | <img src="/assets/img/syringe/bom/carriageInsert" alt="Insert atop Carriage">                                                                |
+| Branding Flag        | 1        | <img src="/assets/img/syringe/bom/brandingFlag.PNG" alt="Customizable Branding Flag">                                                        |
+| Arduino Holder       | 1        | <img src="/assets/img/syringe/bom/arduinoHolder.PNG" alt="Piece to Keep Arduino in Place when Plugging and Unplugging a Cord Branding Flag"> |
 
 ## Arduino Control Code
 
 <script src="https://gist.github.com/alexanderwin37/3bb129f6786a10142793fe48e84a1a1d.js"></script>
 
 ## Syringe Pump Assembly
+
+<iframe src="https://a360.co/3Ls7WXw" width="800" height="600" allowfullscreen="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+{% include gallery caption="CAD Assembly for Syringe Pump" %}
 
 ## Wiring
 
