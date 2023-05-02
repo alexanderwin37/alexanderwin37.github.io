@@ -64,17 +64,17 @@ the carriage, and the branding flag bearing the RR mark.
 
 #### Custom 3D Printed
 
-| Component            | Quantity | Image                                                                                                                                        |
-|----------------------|----------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Motor Mounting Plate | 1        | <img src="/assets/img/syringe/bom/mmPlate.PNG" alt="Motor Mounting Plate">                                                                   |
-| Carriage             | 1        | <img src="/assets/img/syringe/bom/carriage.PNG" alt="Carriage">                                                                              |
-| Front End Support    | 1        | <img src="/assets/img/syringe/bom/frontEndSupport.PNG" alt="Front End Support">                                                              |
-| Back End Support     | 1        | <img src="/assets/img/syringe/bom/backEndSupport.PNG" alt="Back End Support">                                                                |
-| Case                 | 1        | <img src="/assets/img/syringe/bom/housing.PNG" alt="Housing for All Electrical Components">                                                  |
-| Case Lid             | 1        | <img src="/assets/img/syringe/bom/boxLid.PNG" alt="Lid for Housing on which Pump is Mounted">                                                |
-| Syringe Offset Inset | 1        | <img src="/assets/img/syringe/bom/carriageInsert" alt="Insert atop Carriage">                                                                |
-| Branding Flag        | 1        | <img src="/assets/img/syringe/bom/brandingFlag.PNG" alt="Customizable Branding Flag">                                                        |
-| Arduino Holder       | 1        | <img src="/assets/img/syringe/bom/arduinoHolder.PNG" alt="Piece to Keep Arduino in Place when Plugging and Unplugging a Cord Branding Flag"> |
+| Component            | Quantity | Image                                                                                                                                                                       |
+|----------------------|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Motor Mounting Plate | 1        | <img style="height:120px;" src="/assets/img/syringe/bom/mmPlate.PNG" alt="Motor Mounting Plate">                                                                            |
+| Carriage             | 1        | <img style="height:120px;" src="/assets/img/syringe/bom/carriage.PNG" alt="Carriage">                                                                                       |
+| Front End Support    | 1        | <img style="height:120px;" src="/assets/img/syringe/bom/frontEndSupport.PNG" alt="Front End Support">                                                                       |
+| Back End Support     | 1        | <img style="height:120px;" src="/assets/img/syringe/bom/backEndSupport.PNG" alt="Back End Support">                                                                         |
+| Case                 | 1        | <img style="height:120px;" src="/assets/img/syringe/bom/housing.PNG" alt="Housing for All Electrical Components">                                                           |
+| Case Lid             | 1        | <img style="height:120px;" src="/assets/img/syringe/bom/boxLid.PNG" alt="Lid for Housing on which Pump is Mounted">                                                         |
+| Syringe Offset Inset | 1        | <img style="height:120px;" src="/assets/img/syringe/bom/carriageInsert.PNG" alt="Insert atop Carriage">                                                                     |
+| Arduino Holder       | 1        | <img style="height:120px;" src="/assets/img/syringe/bom/arduinoHolder.PNG" alt="Piece to Keep Arduino in Place when Plugging and Unplugging a Cord Branding Flag">          |
+| Branding Flag        | 1        | <img style="height:120px;" src="/assets/img/syringe/bom/brandingFlag.PNG" alt="Customizable Branding Flag">                                                                 |
 
 ## Arduino Control Code
 
