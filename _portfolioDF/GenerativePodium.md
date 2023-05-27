@@ -1,5 +1,6 @@
 ---
 layout: single
+share: true
 title: "Generative Design Podium"
 excerpt: "Lectern Designed with Generative Design and Printed on a Large Format 3D Printer"
 header:
