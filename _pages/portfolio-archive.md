@@ -2,10 +2,10 @@
 title: Portfolio
 layout: collectionDouble
 permalink: /portfolio/
-collection: portfolioDF
-collectionTitle: My Digital Fabrication Projects
-collection2: portfolioCS
-collection2Title: My CS Projects
+collection: portfolioCS
+collectionTitle: My CS Projects
+collection2: portfolioDF
+collection2Title: My Digital Fabrication Projects
 entries_layout: grid
 classes: wide
 ---
