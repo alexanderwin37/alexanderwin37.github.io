@@ -27,7 +27,7 @@ const projects = [
 const links = [
   { label: "GitHub", href: "#" },
   { label: "LinkedIn", href: "#" },
-  { label: "Email", href: "mailto:alexanderwin37@gmail.com" },
+  { label: "Email", href: "#" },
   { label: "Resume", href: "#" },
 ];
 
