@@ -25,17 +25,15 @@ const projects = [
 ];
 
 const links = [
-  { label: "GitHub", href: "#" },
-  { label: "LinkedIn", href: "#" },
-  { label: "Email", href: "#" },
-  { label: "Resume", href: "#" },
+  { label: "GitHub", href: "https://github.alexanderwin.com" },
+  { label: "LinkedIn", href: "https://linkedin.alexanderwin.com" },
 ];
 
 function App() {
   return (
     <>
       <Aurora
-        colorStops={["#13265C", "#13265C", "#13265C"]}
+        colorStops={["#0F2057", "#1B3A8A", "#2E5CB8"]}
         blend={1}
         amplitude={1.5}
         speed={1}
@@ -44,7 +42,7 @@ function App() {
       <div className="relative z-10 min-h-screen flex flex-col items-center gap-8 px-6 sm:px-4 py-16">
 
         {/* Avatar */}
-        <GlassSurface width={128} height={128} borderRadius={64}>
+        <GlassSurface width={128} height={128} borderRadius={64} opacity={0.6}>
           <div className="w-full h-full flex items-center justify-center">
             <Avatar size="lg" color="accent" className="w-24 h-24 text-3xl">
               <Avatar.Image src={headshot} alt="Alexander Erwin" />
@@ -54,14 +52,14 @@ function App() {
         </GlassSurface>
 
         {/* Name */}
-        <GlassSurface width="100%" height="auto" borderRadius={9999} className="w-full max-w-md">
+        <GlassSurface width="100%" height="auto" borderRadius={9999} opacity={0.6} className="w-full max-w-md">
           <div className="px-10 py-4 text-center">
             <h1 className="text-3xl font-bold text-white whitespace-nowrap">Alexander Erwin</h1>
           </div>
         </GlassSurface>
 
         {/* About Me */}
-        <GlassSurface width="100%" height="auto" borderRadius={32} className="w-full max-w-md">
+        <GlassSurface width="100%" height="auto" borderRadius={32} opacity={0.6} className="w-full max-w-md">
           <Card variant="transparent" className="w-full">
             <Card.Header>
               <Card.Title>About Me</Card.Title>
@@ -106,15 +104,11 @@ function App() {
         <h2 className="text-2xl font-bold text-white">Links</h2>
         <div className="w-full max-w-md flex flex-col gap-3">
           {links.map((link) => (
-            <GlassSurface key={link.label} width="100%" height="auto" borderRadius={24}>
-              <Card variant="transparent" className="w-full">
-                <Card.Content className="py-3">
-                  <Link href={link.href} className="w-full flex items-center justify-between">
-                    {link.label}
-                    <Link.Icon />
-                  </Link>
-                </Card.Content>
-              </Card>
+            <GlassSurface key={link.label} width="100%" height="auto" borderRadius={9999} opacity={0.6}>
+              <Link href={link.href} target="_blank" className="w-full px-6 py-2 flex items-center justify-between text-white no-underline">
+                <span>{link.label}</span>
+                <Link.Icon />
+              </Link>
             </GlassSurface>
           ))}
         </div>
