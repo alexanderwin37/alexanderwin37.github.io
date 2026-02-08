@@ -1,8 +1,6 @@
 import Aurora from './react-bits/aurora/Aurora';
-import { Card, Separator } from "@heroui/react";
+import { Avatar, Card, Separator } from "@heroui/react";
 import headshot from './assets/erwin_headshot.png';
-import GlassAvatar from './components/GlassAvatar';
-import GlassCapsule from './components/GlassCapsule';
 import GlassCard from './components/GlassCard';
 import ProjectCard from './components/ProjectCard';
 import LinkButton from './components/LinkButton';
@@ -18,15 +16,17 @@ function App() {
         speed={1}
       />
 
-      <div className="relative z-10 min-h-screen flex flex-col items-center gap-8 px-6 sm:px-4 py-16">
+      <div className="relative z-10 min-h-screen flex flex-col items-start gap-8 px-6 sm:px-4 py-16 max-w-lg mx-auto">
 
-        <GlassAvatar src={headshot} alt="Alexander Erwin" />
-
-        <GlassCapsule>
-          <div className="px-10 py-4 text-center">
-            <h1 className="text-3xl font-bold text-white whitespace-nowrap">Alexander Erwin</h1>
+        <GlassCard>
+          <div className="flex flex-col items-start gap-4 p-4">
+            <Avatar size="lg" color="accent" className="w-16 h-16 text-xl">
+              <Avatar.Image src={headshot} alt="Alexander Erwin" />
+              <Avatar.Fallback>AE</Avatar.Fallback>
+            </Avatar>
+            <h1 className="text-3xl font-bold text-white">Alexander Erwin</h1>
           </div>
-        </GlassCapsule>
+        </GlassCard>
 
         <GlassCard>
           <Card variant="transparent" className="w-full">
@@ -39,19 +39,19 @@ function App() {
           </Card>
         </GlassCard>
 
-        <Separator className="w-full max-w-2xl" />
+        <Separator className="w-full bg-white/10" />
 
         <h2 className="text-2xl font-bold text-white">Projects</h2>
-        <div className="w-full max-w-md sm:max-w-3xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
         </div>
 
-        <Separator className="w-full max-w-2xl" />
+        <Separator className="w-full bg-white/10" />
 
         <h2 className="text-2xl font-bold text-white">Links</h2>
-        <div className="w-full max-w-md flex flex-col gap-3">
+        <div className="w-full grid grid-cols-2 gap-3">
           {links.map((link) => (
             <LinkButton key={link.label} {...link} />
           ))}
