@@ -19,12 +19,16 @@ function App() {
       <div className="relative z-10 min-h-screen flex flex-col items-start gap-8 px-6 sm:px-4 py-16 max-w-lg mx-auto">
 
         <GlassCard>
-          <div className="flex flex-col items-start gap-4 p-4">
-            <Avatar size="lg" color="accent" className="w-16 h-16 text-xl">
+          <div className="flex items-center justify-between gap-4 p-4 w-full">
+            <div>
+              <h1 className="text-3xl font-bold text-white">Alexander Erwin</h1>
+              <p className="text-sm text-white/70">Software Engineer</p>
+              <p className="text-sm text-white/70">Aspiring Writer</p>
+            </div>
+            <Avatar size="lg" color="accent" className="w-24 h-24 text-xl shrink-0">
               <Avatar.Image src={headshot} alt="Alexander Erwin" />
               <Avatar.Fallback>AE</Avatar.Fallback>
             </Avatar>
-            <h1 className="text-3xl font-bold text-white">Alexander Erwin</h1>
           </div>
         </GlassCard>
 
@@ -42,7 +46,7 @@ function App() {
         <Separator className="w-full bg-white/10" />
 
         <h2 className="text-2xl font-bold text-white">Projects</h2>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="w-full grid grid-cols-1 gap-4">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
@@ -51,7 +55,7 @@ function App() {
         <Separator className="w-full bg-white/10" />
 
         <h2 className="text-2xl font-bold text-white">Links</h2>
-        <div className="w-full grid grid-cols-2 gap-3">
+        <div className="w-full grid grid-cols-1 gap-3">
           {links.map((link) => (
             <LinkButton key={link.label} {...link} />
           ))}

@@ -1,37 +1,31 @@
+// import project1Img from './assets/project1.png';
+
 export interface Project {
   title: string;
   description: string;
   tags: string;
   link: string;
+  image?: string;
 }
 
 export interface SocialLink {
   label: string;
   href: string;
+  icon: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "Project One",
+    // title: "BaseballPips",
+    title: "Project 1",
     description: "Brief description of your first CS project.",
     tags: "React / TypeScript",
     link: "#",
-  },
-  {
-    title: "Project Two",
-    description: "Brief description of your second CS project.",
-    tags: "Python / ML",
-    link: "#",
-  },
-  {
-    title: "Project Three",
-    description: "Brief description of your third CS project.",
-    tags: "Node.js / MongoDB",
-    link: "#",
+    // image: project1Img,
   },
 ];
 
 export const links: SocialLink[] = [
-  { label: "GitHub", href: "https://github.alexanderwin.com" },
-  { label: "LinkedIn", href: "https://linkedin.alexanderwin.com" },
+  { label: "GitHub", href: "https://github.alexanderwin.com", icon: "github" },
+  { label: "LinkedIn", href: "https://linkedin.alexanderwin.com", icon: "linkedin" },
 ];
