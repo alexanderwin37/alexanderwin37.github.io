@@ -1,20 +1,33 @@
-import Aurora from './react-bits/aurora/Aurora';
 import { Avatar, Card, Separator } from "@heroui/react";
 import headshot from './assets/erwin_headshot.png';
 import GlassCard from './components/GlassCard';
 import ProjectCard from './components/ProjectCard';
 import LinkButton from './components/LinkButton';
 import { projects, links } from './constants';
+import Beams from "./react-bits/beams/Beams.tsx";
 
 function App() {
   return (
     <>
-      <Aurora
-        colorStops={["#0F2057", "#1B3A8A", "#2E5CB8"]}
-        blend={1}
-        amplitude={1.5}
-        speed={1}
-      />
+      {/*<Aurora*/}
+      {/*  colorStops={["#0F2057", "#1B3A8A", "#2E5CB8"]}*/}
+      {/*  blend={5}*/}
+      {/*  amplitude={2}*/}
+      {/*  speed={0.25}*/}
+      {/*/>*/}
+
+      <div className="beams-container">
+        <Beams
+            beamWidth={8}
+            beamHeight={25}
+            beamNumber={3}
+            lightColor="#74a7fe"
+            speed={5}
+            noiseIntensity={1.75}
+            scale={0.1}
+            rotation={0}
+        />
+      </div>
 
       <div className="relative z-10 min-h-screen flex flex-col items-start gap-8 px-6 sm:px-4 py-16 max-w-lg mx-auto">
 
