@@ -39,7 +39,7 @@ function App() {
 
         <GlassCard>
           <div className="flex flex-col items-start gap-0.5 p-4">
-            <Avatar size="lg" color="accent" className="w-16 h-16 text-xl mb-3">
+            <Avatar size="lg" color="accent" className="w-24 h-24 text-xl mb-3">
               <Avatar.Image src={headshot} alt="Alexander Erwin" />
               <Avatar.Fallback>AE</Avatar.Fallback>
             </Avatar>
