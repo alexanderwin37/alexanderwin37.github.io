@@ -6,6 +6,12 @@ import LinkButton from './components/LinkButton';
 import { projects, links } from './constants';
 import Beams from "./react-bits/beams/Beams.tsx";
 
+const beamColors = ["#74a7fe", "#ffaa00", "#e63b7a"];
+
+function pickRandomColor(colors: string[]): string {
+  return colors[Math.floor(Math.random() * colors.length)];
+}
+
 function App() {
   return (
     <>
@@ -21,7 +27,7 @@ function App() {
             beamWidth={8}
             beamHeight={25}
             beamNumber={3}
-            lightColor="#74a7fe"
+            lightColor={pickRandomColor(beamColors)}
             speed={5}
             noiseIntensity={1.75}
             scale={0.1}
@@ -32,12 +38,14 @@ function App() {
       <div className="relative z-10 min-h-screen flex flex-col items-start gap-8 px-6 sm:px-4 py-16 max-w-lg mx-auto">
 
         <GlassCard>
-          <div className="flex flex-col items-start gap-4 p-4">
-            <Avatar size="lg" color="accent" className="w-16 h-16 text-xl">
+          <div className="flex flex-col items-start gap-0.5 p-4">
+            <Avatar size="lg" color="accent" className="w-16 h-16 text-xl mb-3">
               <Avatar.Image src={headshot} alt="Alexander Erwin" />
               <Avatar.Fallback>AE</Avatar.Fallback>
             </Avatar>
             <h1 className="text-3xl font-bold text-white">Alexander Erwin</h1>
+            <p className="text-sm text-white/70">Software Engineer</p>
+            <p className="text-sm text-white/70">Aspiring Writer</p>
           </div>
         </GlassCard>
 
