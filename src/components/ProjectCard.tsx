@@ -3,7 +3,7 @@ import GlassCard from './GlassCard';
 import { Title, Description, Content, FooterLink } from './StyledCard';
 import type { Project } from '../constants';
 
-export default function ProjectCard({ title, description, tags, link, image }: Project) {
+export default function ProjectCard({ title, description, tags, siteLink, blogLink, image }: Project) {
   return (
     <GlassCard className="">
       <Card variant="transparent" className="w-full">
@@ -15,11 +15,19 @@ export default function ProjectCard({ title, description, tags, link, image }: P
           <Description>{tags}</Description>
         </Card.Header>
         <Content>{description}</Content>
-        <Card.Footer>
-          <FooterLink href={link}>
-            View Project
-            <FooterLink.Icon />
-          </FooterLink>
+        <Card.Footer className="flex gap-4">
+          {blogLink && (
+            <FooterLink href={blogLink}>
+              Read more
+              <FooterLink.Icon />
+            </FooterLink>
+          )}
+          {siteLink && (
+            <FooterLink href={siteLink}>
+              Visit site
+              <FooterLink.Icon />
+            </FooterLink>
+          )}
         </Card.Footer>
       </Card>
     </GlassCard>

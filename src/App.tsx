@@ -4,7 +4,7 @@ import GlassCard from './components/GlassCard';
 import { Title, Content } from './components/StyledCard';
 import ProjectCard from './components/ProjectCard';
 import LinkButton from './components/LinkButton';
-import { projects, links } from './constants';
+import { projects, links, subtitles, aboutMe } from './constants';
 import Beams from "./react-bits/beams/Beams.tsx";
 
 const beamColors = ["#74a7fe", "#ffaa00", "#e63b7a"];
@@ -45,8 +45,9 @@ function App() {
               <Avatar.Fallback>AE</Avatar.Fallback>
             </Avatar>
             <h1 className="text-3xl font-bold text-white">Alexander Erwin</h1>
-            <p className="text-sm text-white/70">Software Engineer</p>
-            <p className="text-sm text-white/70">Aspiring Writer</p>
+            {subtitles.map((s) => (
+              <p key={s} className="text-sm text-white/70">{s}</p>
+            ))}
           </div>
         </GlassCard>
 
@@ -55,7 +56,7 @@ function App() {
             <Card.Header>
               <Title>About Me</Title>
             </Card.Header>
-            <Content>This site is a vibe-coded WIP.</Content>
+            <Content>{aboutMe}</Content>
           </Card>
         </GlassCard>
 
