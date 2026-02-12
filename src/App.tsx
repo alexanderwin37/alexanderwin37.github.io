@@ -1,6 +1,7 @@
 import { Avatar, Card, Separator } from "@heroui/react";
 import headshot from './assets/erwin_headshot.png';
 import GlassCard from './components/GlassCard';
+import { Title, Content } from './components/StyledCard';
 import ProjectCard from './components/ProjectCard';
 import LinkButton from './components/LinkButton';
 import { projects, links } from './constants';
@@ -24,11 +25,11 @@ function App() {
 
       <div className="beams-container">
         <Beams
-            beamWidth={7}
+            beamWidth={8}
             beamHeight={25}
             beamNumber={3}
             lightColor={pickRandomColor(beamColors)}
-            speed={4}
+            speed={3}
             noiseIntensity={2}
             scale={0.1}
             rotation={0}
@@ -52,11 +53,9 @@ function App() {
         <GlassCard>
           <Card variant="transparent" className="w-full">
             <Card.Header>
-              <Card.Title>About Me</Card.Title>
+              <Title>About Me</Title>
             </Card.Header>
-            <Card.Content>
-              <p>This site is a vibe-coded WIP.</p>
-            </Card.Content>
+            <Content>This site is a vibe-coded WIP.</Content>
           </Card>
         </GlassCard>
 
