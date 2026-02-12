@@ -5,6 +5,9 @@ function Title({ className = '', ...props }: ComponentProps<typeof Card.Title>) 
   return <Card.Title className={`text-lg font-semibold ${className}`} {...props} />;
 }
 
+function Description({ className = '', ...props }: ComponentProps<typeof Card.Description>) {
+  return <Card.Description className={`text-xs text-white/50 ${className}`} {...props} />;
+}
 
 function Content({ children, className = '', ...props }: ComponentProps<typeof Card.Content>) {
   return (
@@ -19,4 +22,4 @@ function FooterLink({ className = '', ...props }: ComponentProps<typeof Link>) {
 }
 FooterLink.Icon = Link.Icon;
 
-export { Title, Content, FooterLink };
+export { Title, Description, Content, FooterLink };
