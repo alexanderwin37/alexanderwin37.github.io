@@ -1,4 +1,4 @@
-import project1Img from './assets/project1.png';
+// import project1Img from './assets/project1.png';
 
 export interface Project {
   title: string;
@@ -15,16 +15,16 @@ export interface SocialLink {
 }
 
 export const projects: Project[] = [
+  // {
+  //   title: "BaseballPips",
+  //   description: "This project taught me how to develop an iOS App.",
+  //   tags: "Swift iOS app backed by a Node.js server",
+  //   siteLink: "https://baseballpips.com",
+  //   blogLink: "/project/baseballpips",
+  //   image: project1Img,
+  // },
   {
-    title: "BaseballPips",
-    description: "This project taught me how to develop an iOS App.",
-    tags: "Swift iOS app backed by a Node.js server",
-    siteLink: "https://baseballpips.com",
-    blogLink: "/project/baseballpips",
-    image: project1Img,
-  },
-  {
-    title: "More coming soon...",
+    title: "Coming soon...",
     description: "",
     tags: "",
   }
