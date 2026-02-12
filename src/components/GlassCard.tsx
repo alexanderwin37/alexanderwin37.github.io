@@ -7,7 +7,7 @@ interface GlassCardProps {
   borderRadius?: number;
 }
 
-export default function GlassCard({ children, className = "w-full max-w-lg", opacity = 0.6, borderRadius = 32 }: GlassCardProps) {
+export default function GlassCard({ children, className = "w-full max-w-lg", opacity = 0.6, borderRadius = 2 }: GlassCardProps) {
   return (
     <GlassSurface width="100%" height="auto" borderRadius={borderRadius} opacity={opacity} className={className}>
       {children}

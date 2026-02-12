@@ -21,6 +21,11 @@ export const projects: Project[] = [
     tags: "Swift iOS app backed by a Node.js server",
     siteLink: "https://baseballpips.com",
     image: project1Img,
+  },
+  {
+    title: "More to come...",
+    description: "",
+    tags: "",
   }
 ];
 

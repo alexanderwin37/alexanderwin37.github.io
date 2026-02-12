@@ -8,7 +8,7 @@ interface GlassAvatarProps {
   size?: number;
 }
 
-export default function GlassAvatar({ src, alt = "", fallback = "AE", size = 128 }: GlassAvatarProps) {
+export default function GlassAvatar({ src, alt = "", fallback = "AE", size = 8 }: GlassAvatarProps) {
   return (
     <GlassSurface width={size} height={size} borderRadius={size / 2} opacity={0.6}>
       <div className="w-full h-full flex items-center justify-center">

@@ -44,9 +44,9 @@ export interface GlassSurfaceProps {
 
 const GlassSurface: React.FC<GlassSurfaceProps> = ({
                                                        children,
-                                                       width = 200,
-                                                       height = 80,
-                                                       borderRadius = 20,
+                                                       width = 12.5,
+                                                       height = 5,
+                                                       borderRadius = 1.25,
                                                        borderWidth = 0.07,
                                                        brightness = 50,
                                                        opacity = 0.93,
@@ -199,9 +199,9 @@ const GlassSurface: React.FC<GlassSurfaceProps> = ({
 
     const containerStyle: React.CSSProperties = {
         ...style,
-        width: typeof width === 'number' ? `${width}px` : width,
-        height: typeof height === 'number' ? `${height}px` : height,
-        borderRadius: `${borderRadius}px`,
+        width: typeof width === 'number' ? `${width}rem` : width,
+        height: typeof height === 'number' ? `${height}rem` : height,
+        borderRadius: `${borderRadius}rem`,
         '--glass-frost': backgroundOpacity,
         '--glass-saturation': saturation,
         '--filter-id': `url(#${filterId})`

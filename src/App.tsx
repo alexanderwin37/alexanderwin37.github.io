@@ -72,7 +72,7 @@ function App() {
         <Separator className="w-full bg-white/10" />
 
         <h2 className="text-2xl font-bold text-white">Links</h2>
-        <div className="w-full grid grid-cols-2 gap-3">
+        <div className="w-full grid grid-cols-1 gap-3">
           {links.map((link) => (
             <LinkButton key={link.label} {...link} />
           ))}

@@ -9,7 +9,7 @@ export default function ProjectCard({ title, description, tags, siteLink, blogLi
       <Card variant="transparent" className="w-full">
         <Card.Header>
           {image && (
-            <img src={image} alt={title} className="w-14 h-14 object-cover rounded-lg mb-3 -ml-1" />
+            <img src={image} alt={title} className="w-14 h-14 object-cover rounded-lg mb-4 -ml-1" />
           )}
           <Title>{title}</Title>
           <Description>{tags}</Description>
