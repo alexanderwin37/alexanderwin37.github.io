@@ -1,9 +1,12 @@
 import { Card } from '@heroui/react';
+import { useNavigate } from 'react-router-dom';
 import GlassCard from './GlassCard';
 import { Title, Description, Content, FooterLink } from './StyledCard';
 import type { Project } from '../constants';
 
 export default function ProjectCard({ title, description, tags, siteLink, blogLink, image }: Project) {
+  const navigate = useNavigate();
+
   return (
     <GlassCard className="">
       <Card variant="transparent" className="w-full">
@@ -17,7 +20,7 @@ export default function ProjectCard({ title, description, tags, siteLink, blogLi
         <Content>{description}</Content>
         <Card.Footer className="flex gap-4">
           {blogLink && (
-            <FooterLink href={blogLink}>
+            <FooterLink onPress={() => navigate(blogLink)} className="cursor-pointer">
               Read more
               <FooterLink.Icon />
             </FooterLink>

@@ -20,10 +20,11 @@ export const projects: Project[] = [
     description: "This project taught me how to develop an iOS App.",
     tags: "Swift iOS app backed by a Node.js server",
     siteLink: "https://baseballpips.com",
+    blogLink: "/project/baseballpips",
     image: project1Img,
   },
   {
-    title: "More to come...",
+    title: "More coming soon...",
     description: "",
     tags: "",
   }
@@ -31,7 +32,7 @@ export const projects: Project[] = [
 
 export const subtitles = ["Software Engineer", "Aspiring Author"];
 
-export const aboutMe = "I'm Alexander. I grew up in Colorado and have since moved to both Nashville and Seattle. ";
+export const aboutMe = "I'm Alexander. I grew up in Colorado, attended uni in Nashville, and now live in Seattle. I used Claude Code to vibe-code this website, which is still a work in progress.";
 
 export const links: SocialLink[] = [
   { label: "GitHub", href: "https://github.alexanderwin.com" },
