@@ -71,7 +71,8 @@ function extendMaterial<T extends THREE.Material = THREE.Material>(
         vertexShader: vert,
         fragmentShader: frag,
         lights: true,
-        fog: !!cfg.material?.fog
+        fog: !!cfg.material?.fog,
+        depthWrite: false
     });
 
     return mat;

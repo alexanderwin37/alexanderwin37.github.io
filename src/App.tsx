@@ -24,12 +24,12 @@ function App() {
 
       <div className="beams-container">
         <Beams
-            beamWidth={8}
+            beamWidth={7}
             beamHeight={25}
             beamNumber={3}
             lightColor={pickRandomColor(beamColors)}
-            speed={5}
-            noiseIntensity={1.75}
+            speed={4}
+            noiseIntensity={2}
             scale={0.1}
             rotation={0}
         />
@@ -63,7 +63,7 @@ function App() {
         <Separator className="w-full bg-white/10" />
 
         <h2 className="text-2xl font-bold text-white">Projects</h2>
-        <div className="w-full grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="w-full grid grid-cols-1 gap-4">
           {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
