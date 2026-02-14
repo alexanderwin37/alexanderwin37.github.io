@@ -31,6 +31,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/project/:slug" element={<BlogPost />} />
+            <Route path="/writing/:slug" element={<BlogPost />} />
             <Route path="/*" element={<Redirect to={"/"} />} />
           </Routes>
         </div>

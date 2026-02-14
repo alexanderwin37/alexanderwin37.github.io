@@ -46,6 +46,22 @@ export const projects: Project[] = [
   }
 ];
 
+export interface BlogPost {
+  title: string;
+  description: string;
+  slug: string;
+  date: string;
+}
+
+export const blogPosts: BlogPost[] = [
+  {
+    title: "Hello World",
+    description: "My first blog post — why I started writing.",
+    slug: "hello-world",
+    date: "2026-02-13",
+  },
+];
+
 export const subtitles = ["Software Engineer", "Aspiring Writer"];
 
 export const aboutMe = "I'm Alexander. I grew up in Colorado, attended uni in Nashville, and now live in Seattle. I used Claude Code to vibe-code this website, which is still a work in progress.";

@@ -3,8 +3,9 @@ import headshot from '../assets/erwin_headshot.png';
 import GlassCard from '../components/GlassCard';
 import { Title, Content } from '../components/StyledCard';
 import ProjectCard from '../components/ProjectCard';
+import BlogCard from '../components/BlogCard';
 import LinkButton from '../components/LinkButton';
-import { projects, links, subtitles, aboutMe } from '../constants';
+import { projects, blogPosts, links, subtitles, aboutMe } from '../constants';
 
 export default function Home() {
   return (
@@ -38,6 +39,15 @@ export default function Home() {
       <div className="w-full grid grid-cols-1 gap-4">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
+        ))}
+      </div>
+
+      <Separator className="w-full bg-white/10" />
+
+      <h2 className="text-2xl font-bold text-white">Writing</h2>
+      <div className="w-full grid grid-cols-1 gap-4">
+        {blogPosts.map((post) => (
+          <BlogCard key={post.slug} {...post} />
         ))}
       </div>
 
