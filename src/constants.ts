@@ -33,7 +33,7 @@ export const projects: Project[] = [
   },
   {
     title: "eBird-Phetcher",
-    description: "Retrieve your old photos uploaded to eBird at original resolution",
+    description: "Retrieve your eBird photos at original resolution",
     tags: "Executable script written in TypeScript",
     siteLink: "https://github.com/alexanderwin37/eBird-Phetcher",
     image: eBirdPhetcherIcon,
