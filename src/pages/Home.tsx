@@ -57,7 +57,10 @@ export default function Home() {
 
       <Separator className="w-full bg-white/10" />
 
-      <h2 className="text-2xl font-bold text-white">Projects</h2>
+      <div className="flex items-center gap-3">
+        <h2 className="text-2xl font-bold text-white">Projects</h2>
+        <GlassChip>Best</GlassChip>
+      </div>
       <div className="w-full grid grid-cols-1 gap-4">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
