@@ -1,13 +1,18 @@
 import { Avatar, Card, Separator } from "@heroui/react";
+import { useNavigate } from 'react-router-dom';
 import headshot from '../assets/erwin_headshot.png';
 import GlassCard from '../components/GlassCard';
 import { Title, Content } from '../components/StyledCard';
+import { FooterLink } from '../components/StyledCard';
 import ProjectCard from '../components/ProjectCard';
-import BlogCard from '../components/BlogCard';
+import ArticleCard from '../components/ArticleCard';
 import LinkButton from '../components/LinkButton';
-import { projects, blogPosts, links, subtitles, aboutMe } from '../constants';
+import { projects, articles, links, subtitles, aboutMe } from '../constants';
 
 export default function Home() {
+  const navigate = useNavigate();
+  const latestArticle = articles[0];
+
   return (
     <div className="flex flex-col items-start gap-8 px-6 sm:px-4 py-16 max-w-lg mx-auto">
 
@@ -35,19 +40,23 @@ export default function Home() {
 
       <Separator className="w-full bg-white/10" />
 
+      <h2 className="text-2xl font-bold text-white">Writing</h2>
+      {latestArticle && (
+        <div className="w-full grid grid-cols-1 gap-4">
+          <ArticleCard {...latestArticle} latest />
+          <FooterLink onPress={() => navigate('/writing')} className="cursor-pointer">
+            See more
+            <FooterLink.Icon />
+          </FooterLink>
+        </div>
+      )}
+
+      <Separator className="w-full bg-white/10" />
+
       <h2 className="text-2xl font-bold text-white">Projects</h2>
       <div className="w-full grid grid-cols-1 gap-4">
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
-        ))}
-      </div>
-
-      <Separator className="w-full bg-white/10" />
-
-      <h2 className="text-2xl font-bold text-white">Writing</h2>
-      <div className="w-full grid grid-cols-1 gap-4">
-        {blogPosts.map((post) => (
-          <BlogCard key={post.slug} {...post} />
         ))}
       </div>
 

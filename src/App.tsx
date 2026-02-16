@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Beams from "./react-bits/beams/Beams.tsx";
 import Home from './pages/Home';
-import BlogPost from './pages/BlogPost';
+import Article from './pages/Article';
+import WritingArchive from './pages/WritingArchive';
 import Redirect from "./components/Redirect.tsx";
 
 const beamColors = ["#74a7fe", "#ffaa00", "#e63b7a"];
@@ -30,8 +31,9 @@ function App() {
         <div className="flex-1">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/project/:slug" element={<BlogPost />} />
-            <Route path="/writing/:slug" element={<BlogPost />} />
+            <Route path="/project/:slug" element={<Article />} />
+            <Route path="/writing" element={<WritingArchive />} />
+            <Route path="/writing/:slug" element={<Article />} />
             <Route path="/*" element={<Redirect to={"/"} />} />
           </Routes>
         </div>

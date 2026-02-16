@@ -46,19 +46,31 @@ export const projects: Project[] = [
   }
 ];
 
-export interface BlogPost {
+export interface Article {
   title: string;
   description: string;
   slug: string;
   date: string;
 }
 
-export const blogPosts: BlogPost[] = [
+export const articles: Article[] = [
+  {
+    title: "On Vibe-Coding a Portfolio",
+    description: "What I learned building this site with Claude Code.",
+    slug: "vibe-coding",
+    date: "2026-02-13",
+  },
+  {
+    title: "Lessons from eBird-Phetcher",
+    description: "A deep dive into scraping, rate limits, and respecting APIs.",
+    slug: "ebird-phetcher",
+    date: "2026-02-10",
+  },
   {
     title: "Hello World",
-    description: "My first blog post — why I started writing.",
+    description: "My first post — why I started writing.",
     slug: "hello-world",
-    date: "2026-02-13",
+    date: "2026-02-01",
   },
 ];
 

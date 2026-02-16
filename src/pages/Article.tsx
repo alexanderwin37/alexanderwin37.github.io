@@ -5,7 +5,7 @@ import GlassCard from '../components/GlassCard';
 
 const posts = import.meta.glob('../content/*.md', { query: '?raw', import: 'default' });
 
-export default function BlogPost() {
+export default function Article() {
   const { slug } = useParams<{ slug: string }>();
   const [content, setContent] = useState<string | null>(null);
   const [notFound, setNotFound] = useState(false);
