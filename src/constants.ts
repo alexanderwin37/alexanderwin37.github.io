@@ -67,7 +67,7 @@ export const articles: Article[] = [
     date: "2026-02-10",
   },
   {
-    title: "Hello World",
+    title: "Dev Sites Considered Harmful",
     description: "My first post — why I started writing.",
     slug: "hello-world",
     date: "2026-02-01",
@@ -81,4 +81,5 @@ export const aboutMe = "I'm Alexander. I grew up in Colorado, attended uni in Na
 export const links: SocialLink[] = [
   { label: "GitHub", href: "https://github.alexanderwin.com" },
   { label: "LinkedIn", href: "https://linkedin.alexanderwin.com" },
+  { label: "eBird", href: "https://ebird.alexanderwin.com" },
 ];
