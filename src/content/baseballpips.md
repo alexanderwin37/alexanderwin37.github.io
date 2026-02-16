@@ -1,3 +1,3 @@
 # BaseballPips
 
-More coming soon
+More about BaseballPips coming soon

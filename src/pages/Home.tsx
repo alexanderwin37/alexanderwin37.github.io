@@ -1,18 +1,30 @@
 import { Avatar, Card, Separator } from "@heroui/react";
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import Markdown from 'react-markdown';
 import headshot from '../assets/erwin_headshot.png';
 import GlassCard from '../components/GlassCard';
-import { Title, Content } from '../components/StyledCard';
+import { Title } from '../components/StyledCard';
 import { FooterLink } from '../components/StyledCard';
 import ProjectCard from '../components/ProjectCard';
 import ArticleCard from '../components/ArticleCard';
 import LinkButton from '../components/LinkButton';
 import GlassChip from '../components/GlassChip';
-import { projects, articles, links, subtitles, aboutMe } from '../constants';
+import { projects, articles, links, subtitles } from '../constants';
+
+const aboutLoader = import.meta.glob('../content/about.md', { query: '?raw', import: 'default' });
 
 export default function Home() {
   const navigate = useNavigate();
   const latestArticle = articles[0];
+  const [aboutContent, setAboutContent] = useState<string>('');
+
+  useEffect(() => {
+    const loader = aboutLoader['../content/about.md'];
+    if (loader) {
+      (loader() as Promise<string>).then(setAboutContent);
+    }
+  }, []);
 
   return (
     <div className="flex flex-col items-start gap-8 px-6 sm:px-4 py-16 max-w-lg mx-auto">
@@ -35,7 +47,13 @@ export default function Home() {
           <Card.Header>
             <Title>About Me</Title>
           </Card.Header>
-          <Content>{aboutMe}</Content>
+          <Card.Content className="prose prose-invert prose-sm max-w-none
+            [&_p]:text-sm [&_p]:text-white/70 [&_p]:mb-3 [&_p:last-child]:mb-0
+            [&_a]:text-white/50 [&_a]:underline
+            [&_strong]:text-white
+          ">
+            <Markdown>{aboutContent}</Markdown>
+          </Card.Content>
         </Card>
       </GlassCard>
 
@@ -45,7 +63,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold text-white">Writing</h2>
         <GlassChip>Latest</GlassChip>
       </div>
-      {latestArticle && (
+      {latestArticle ? (
         <div className="w-full grid grid-cols-1 gap-4">
           <ArticleCard {...latestArticle} />
           <FooterLink onPress={() => navigate('/writing')} className="cursor-pointer">
@@ -53,6 +71,14 @@ export default function Home() {
             <FooterLink.Icon />
           </FooterLink>
         </div>
+      ) : (
+        <GlassCard>
+          <Card variant="transparent" className="w-full">
+            <Card.Header>
+              <Title>Coming soon</Title>
+            </Card.Header>
+          </Card>
+        </GlassCard>
       )}
 
       <Separator className="w-full bg-white/10" />
@@ -65,6 +91,13 @@ export default function Home() {
         {projects.map((project) => (
           <ProjectCard key={project.title} {...project} />
         ))}
+        <GlassCard>
+          <Card variant="transparent" className="w-full">
+            <Card.Header>
+              <Title>More coming soon</Title>
+            </Card.Header>
+          </Card>
+        </GlassCard>
       </div>
 
       <Separator className="w-full bg-white/10" />

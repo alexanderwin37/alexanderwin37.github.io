@@ -39,11 +39,6 @@ export const projects: Project[] = [
     image: eBirdPhetcherIcon,
     iconCredit: { iconLink: "https://thenounproject.com/icon/bird-7842077/", creator: "Princess In The Spotlight", creatorLink: "https://thenounproject.com/creator/vitafatimah84/" },
   },
-  {
-    title: "More coming soon...",
-    description: "",
-    tags: "",
-  }
 ];
 
 export interface Article {
@@ -54,17 +49,15 @@ export interface Article {
 }
 
 export const articles: Article[] = [
-  {
-    title: "Dev Sites Considered Harmful",
-    description: "On beating a dead horse",
-    slug: "considered-harmful",
-    date: "2026-03-01",
-  },
+  // {
+  //   title: "Dev Sites Considered Harmful",
+  //   description: "On beating a dead horse",
+  //   slug: "considered-harmful",
+  //   date: "2026-03-01",
+  // },
 ];
 
 export const subtitles = ["Software Engineer", "Aspiring Writer"];
-
-export const aboutMe = "I'm Alexander. I grew up in Colorado, attended uni in Nashville, and now live in Seattle. I used Claude Code to vibe-code this website, which is still a work in progress.";
 
 export const links: SocialLink[] = [
   { label: "GitHub", href: "https://github.alexanderwin.com" },
