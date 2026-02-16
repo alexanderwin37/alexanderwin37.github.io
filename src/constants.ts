@@ -25,7 +25,7 @@ export interface SocialLink {
 export const projects: Project[] = [
   {
     title: "BaseballPips",
-    description: "This project taught me how to develop an iOS App.",
+    description: "Follow your baseball team throughout the season",
     tags: "Swift iOS app backed by a Node.js server",
     siteLink: "https://baseballpips.com",
     blogLink: "/project/baseballpips",
@@ -55,22 +55,10 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    title: "On Vibe-Coding a Portfolio",
-    description: "What I learned building this site with Claude Code.",
-    slug: "vibe-coding",
-    date: "2026-02-13",
-  },
-  {
-    title: "Lessons from eBird-Phetcher",
-    description: "A deep dive into scraping, rate limits, and respecting APIs.",
-    slug: "ebird-phetcher",
-    date: "2026-02-10",
-  },
-  {
     title: "Dev Sites Considered Harmful",
-    description: "My first post — why I started writing.",
-    slug: "hello-world",
-    date: "2026-02-01",
+    description: "On beating a dead horse",
+    slug: "considered-harmful",
+    date: "2026-03-01",
   },
 ];
 

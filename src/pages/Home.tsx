@@ -7,6 +7,7 @@ import { FooterLink } from '../components/StyledCard';
 import ProjectCard from '../components/ProjectCard';
 import ArticleCard from '../components/ArticleCard';
 import LinkButton from '../components/LinkButton';
+import GlassChip from '../components/GlassChip';
 import { projects, articles, links, subtitles, aboutMe } from '../constants';
 
 export default function Home() {
@@ -40,10 +41,13 @@ export default function Home() {
 
       <Separator className="w-full bg-white/10" />
 
-      <h2 className="text-2xl font-bold text-white">Writing</h2>
+      <div className="flex items-center gap-3">
+        <h2 className="text-2xl font-bold text-white">Writing</h2>
+        <GlassChip>Latest</GlassChip>
+      </div>
       {latestArticle && (
         <div className="w-full grid grid-cols-1 gap-4">
-          <ArticleCard {...latestArticle} latest />
+          <ArticleCard {...latestArticle} />
           <FooterLink onPress={() => navigate('/writing')} className="cursor-pointer">
             See more
             <FooterLink.Icon />
