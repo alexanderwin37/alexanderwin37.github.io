@@ -28,7 +28,6 @@ export const projects: Project[] = [
     description: "Follow your baseball team throughout the season",
     tags: "Swift iOS app backed by a Node.js server",
     siteLink: "https://baseballpips.com",
-    blogLink: "/project/baseballpips",
     image: project1Img,
   },
   {
