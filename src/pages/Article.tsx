@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Markdown from 'react-markdown';
 import GlassCard from '../components/GlassCard';
+import { articles } from '../constants';
 
 const posts = import.meta.glob('../content/*.md', { query: '?raw', import: 'default' });
 
@@ -10,7 +11,13 @@ export default function Article() {
   const [content, setContent] = useState<string | null>(null);
   const [notFound, setNotFound] = useState(false);
 
+  const isValidSlug = articles.some((a) => a.slug === slug);
+
   useEffect(() => {
+    if (!isValidSlug) {
+      setNotFound(true);
+      return;
+    }
     const key = `../content/${slug}.md`;
     const loader = posts[key];
     if (loader) {
@@ -18,7 +25,7 @@ export default function Article() {
     } else {
       setNotFound(true);
     }
-  }, [slug]);
+  }, [slug, isValidSlug]);
 
   if (notFound) {
     return (
