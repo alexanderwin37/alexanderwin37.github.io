@@ -9,7 +9,7 @@ export default function WritingArchive() {
       <h1 className="text-3xl font-bold text-white">Writing</h1>
       <div className="w-full grid grid-cols-1 gap-4">
         {articles.map((article) => (
-          <ArticleCard key={article.slug} {...article} />
+          <ArticleCard key={article.articleSlug} {...article} />
         ))}
       </div>
     </div>

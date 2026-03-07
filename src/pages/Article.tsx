@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import Markdown from 'react-markdown';
 import GlassCard from '../components/GlassCard';
-import { articles } from '../constants';
+import { articles, projects } from '../constants';
 
 const posts = import.meta.glob('../content/*.md', { query: '?raw', import: 'default' });
 
@@ -11,7 +11,8 @@ export default function Article() {
   const [content, setContent] = useState<string | null>(null);
   const [notFound, setNotFound] = useState(false);
 
-  const isValidSlug = articles.some((a) => a.slug === slug);
+  const isValidSlug = articles.some((a) => a.articleSlug === slug)
+    || projects.some((p) => p.projectSlug === slug);
 
   useEffect(() => {
     if (!isValidSlug) {

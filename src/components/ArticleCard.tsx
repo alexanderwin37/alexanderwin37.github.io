@@ -4,7 +4,7 @@ import GlassCard from './GlassCard';
 import { Title, Description, Content, FooterLink } from './StyledCard';
 import type { Article } from '../constants';
 
-export default function ArticleCard({ title, description, slug, date }: Article) {
+export default function ArticleCard({ title, description, articleSlug, date }: Article) {
   const navigate = useNavigate();
 
   return (
@@ -16,7 +16,7 @@ export default function ArticleCard({ title, description, slug, date }: Article)
         </Card.Header>
         <Content>{description}</Content>
         <Card.Footer className="flex gap-4">
-          <FooterLink onPress={() => navigate(`/writing/${slug}`)} className="cursor-pointer">
+          <FooterLink onPress={() => navigate(`/writing/${articleSlug}`)} className="cursor-pointer">
             Read
             <FooterLink.Icon />
           </FooterLink>

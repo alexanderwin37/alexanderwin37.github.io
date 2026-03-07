@@ -1,18 +1,20 @@
+import { useState } from 'react';
 import { Card } from '@heroui/react';
 import { useNavigate } from 'react-router-dom';
 import GlassCard from './GlassCard';
 import { Title, Description, Content, FooterLink } from './StyledCard';
 import type { Project } from '../constants';
 
-export default function ProjectCard({ title, description, tags, siteLink, blogLink, image, iconCredit }: Project) {
+export default function ProjectCard({ title, description, tags, siteLink, projectSlug, image, hoverImage, iconCredit }: Project) {
   const navigate = useNavigate();
+  const [hovered, setHovered] = useState(false);
 
   return (
-    <GlassCard className="">
+    <GlassCard className="" onMouseEnter={() => setHovered(true)} onMouseLeave={() => setHovered(false)}>
       <Card variant="transparent" className="w-full">
         <Card.Header>
           {image && (
-            <img src={image} alt={title} className="w-14 h-14 object-cover rounded-lg mb-4 -ml-1" />
+            <img src={hovered && hoverImage ? hoverImage : image} alt={title} className="w-14 h-14 object-cover rounded-lg mb-4 -ml-1 transition-all duration-300" />
           )}
           <Title>{title}</Title>
           <Description>{tags}</Description>
@@ -20,8 +22,8 @@ export default function ProjectCard({ title, description, tags, siteLink, blogLi
         <Content>{description}</Content>
         <Card.Footer className="flex flex-col items-start gap-2">
           <div className="flex gap-4">
-            {blogLink && (
-              <FooterLink onPress={() => navigate(blogLink)} className="cursor-pointer">
+            {projectSlug && (
+              <FooterLink onPress={() => navigate(`/project/${projectSlug}`)} className="cursor-pointer">
                 Read more
                 <FooterLink.Icon />
               </FooterLink>
