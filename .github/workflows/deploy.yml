@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [portfolio26]
+    branches: [v26/main]
 
 permissions:
   contents: read
